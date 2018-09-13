@@ -13,7 +13,6 @@
  *
  *   @return all solutions
  *   @todo a
- *
  *   @warning LOLLL!!!
  *  @note Use it carefully!!!
  */
