@@ -12,7 +12,7 @@ int main()
 
     double a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
 
-    printf("# Enter a, b, c \n");
+    printf("# Solve Square Equation (C) YURAGOL #\n # Enter a, b, c \n");
     scanf("%lf %lf %lf" , &a, &b, &c);
     int n_Roots = Solve_Square(a, b, c, &x1, &x2);
 
@@ -25,21 +25,21 @@ int main()
      case 1:
         printf("# One Solution x = %lf \n", x1);
         break;
-
+(fabs(b) < eps)
      case 2:
         printf("# Two Solution \nx1 = %lf \nx2 = %lf \n", x1, x2);
         break;
 
-     case INFINITY_ROOTS://*  */
+     case INFINITY_ROOTS:
         printf("# An Infinity Number of solution\n ");
         break;
 
      case TWO_COMPLEX_ROOTS:
-        printf("# Two Complex Roots\n");
+        printf("# Two Complex Roots\nx1 = %lf + %lfi\nx1 = %lf - %lfi\n", x2 , x1 , x2 , x1);
         break;
 
      default :
-        printf("# ERROR LOOL\n");
+        printf("# ERROR LOOL \n%lf Roots\n",n_Roots);
         break;
     }
     return 0;

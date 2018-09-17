@@ -1,7 +1,7 @@
 /**
  *   @breaf Solving Square Equation
  *
- *   @function Solve_Square()
+ *
  *
  *
  *   @param [in] a a-coefficient
@@ -15,14 +15,16 @@
  *   @todo a
  *   @warning LOLLL!!!
  *  @note Use it carefully!!!
+ *
+ *  @autors (C) YURiGOL, 2018
  */
 
 #include "header.h"
 
 
 //-------------------------------------------------------------------------------
-int Solve_Square(double a, double b, double c, double *x1, double *x2)
-{
+int Solve_Square(double a, double b, double c, double *x1, double *x2) {
+
     assert(! isnan (a) );
     assert(! isnan (b) );
     assert(! isnan (c) );
@@ -59,13 +61,18 @@ int Solve_Square(double a, double b, double c, double *x1, double *x2)
 
     if (D < 0)
 
-        return TWO_COMPLEX_ROOTS;
+    {
 
+
+            double D_Sqrt = sqrt(-D);
+            *x1 = ( D_Sqrt / (2 * a) );
+            *x2 =  ( -b / (2 * a) );
+            return TWO_COMPLEX_ROOTS;
     }
-//---------------------------------------------------------------------------
+}
+//-------------------------------------------------------------------------------
 
-int Linear_Equation(double b, double c, double *x)
-{
+int Linear_Equation(double b, double c, double *x) {
     assert(! isnan (b) );
     assert(! isnan (c) );
 
@@ -74,9 +81,10 @@ int Linear_Equation(double b, double c, double *x)
 
     assert(x != NULL);
 
-    if (b == 0)
+        double eps =  0.00001;
+     if(fabs(b) < eps)
         {
-            if (c == 0)
+            if ((fabs(c) < eps))
                 return INFINITY_ROOTS;
                 return 0;//(c!=0)
         }
@@ -87,4 +95,4 @@ int Linear_Equation(double b, double c, double *x)
             return 1;
         }
 }
-//----------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
