@@ -1,7 +1,8 @@
 /**
  *   @breaf Solving Square Equation
  *
- *
+ *  @function Solve_Square
+ *  @function Linear_Equation
  *
  *
  *   @param [in] a a-coefficient
@@ -12,8 +13,8 @@
  *
  *
  *   @return all solutions
- *   @todo a
- *   @warning LOLLL!!!
+ *
+ *
  *  @note Use it carefully!!!
  *
  *  @autors (C) YURiGOL, 2018
@@ -73,6 +74,7 @@ int Solve_Square(double a, double b, double c, double *x1, double *x2) {
 //-------------------------------------------------------------------------------
 
 int Linear_Equation(double b, double c, double *x) {
+
     assert(! isnan (b) );
     assert(! isnan (c) );
 
@@ -81,10 +83,10 @@ int Linear_Equation(double b, double c, double *x) {
 
     assert(x != NULL);
 
-        double eps =  0.00001;
-     if(fabs(b) < eps)
+     if(fabs(b) < EPC)
         {
-            if ((fabs(c) < eps))
+            if ((fabs(c) < EPC))
+
                 return INFINITY_ROOTS;
                 return 0;//(c!=0)
         }
