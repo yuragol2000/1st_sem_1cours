@@ -1,51 +1,68 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------LIB---------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "header.h"
-#include "Solve_Square.c"
+#include <string.h>
+#include <assert.h>
+#include <ctype.h>
+#include "STEK.c"
+
+int MAXELEMENTS = 100;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------------------------------------------------------//
+//--------------------------------------------MAIN----------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main() {
+
+    system ("chcp 1251");
+
+    int i = 0, n = 0;
+    float elem = 0;
+
+    struct stack *stk = calloc(1,sizeof(struct stack));
+
+    init(stk);
+
+    printf("введите количество элементов в стеке: ");
 
 
-//--------------------------------------------------------------
+    if (scanf("%d",&n) != 1){
 
-int main()
-{
-
-    double a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
-
-    printf("# Solve Square Equation (C) YURAGOL #\n # Enter a, b, c \n");
-
-    if (scanf("%lf %lf %lf" , &a, &b, &c) != 3)//reading coefficients
-        exit(0);
-
-    int n_Roots = Solve_Square(a, b, c, &x1, &x2);//number of solutions
-
-    switch (n_Roots)
-
-    {
-     case 0:
-        printf("# No Solution \n");
-        break;
-
-     case 1:
-        printf("# One Solution x = %lf \n", x1);
-        break;
-
-     case 2:
-        printf("# Two Solution \nx1 = %lf \nx2 = %lf \n", x1, x2);
-        break;
-
-     case INFINITY_ROOTS:
-        printf("# An Infinity Number of solution\n ");
-        break;
-
-     case TWO_COMPLEX_ROOTS:
-        printf("# Two Complex Roots\nx1 = %lf + %lfi\nx1 = %lf - %lfi\n", x2 , x1 , x2 , x1);
-        break;
-
-     default :
-        printf("# ERROR LOOL \n%lf Roots\n",n_Roots);
-        break;
+        fputs("Ошибка вводных данных",stdout);
+        exit(1);
     }
-    return 0;
+
+
+    for(i = 0; i < n; i++){
+
+        printf("Введите элемент %d:", i);
+
+        if (scanf("%f", &elem) != 1){
+
+            fputs("Ошибка вводных данных",stdout);
+            exit(2);
+
+        }
+
+        push(stk,elem);
+    }
+        STK_PRINT(stk);
+
+    do {
+
+        printf("Извлекаем элемент %f, ", pop(stk));
+        printf("в стеке осталось %d элементов\n", gettop(stk));
+
+        }
+
+    while(isempty(stk) == 0);
+
+return 0;
 }
-//-----------------------------------------------------------------------
