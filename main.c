@@ -13,10 +13,14 @@ int main()
     double a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
 
     printf("# Solve Square Equation (C) YURAGOL #\n # Enter a, b, c \n");
-    scanf("%lf %lf %lf" , &a, &b, &c);
-    int n_Roots = Solve_Square(a, b, c, &x1, &x2);
+
+    if (scanf("%lf %lf %lf" , &a, &b, &c) != 3)//reading coefficients
+        exit(0);
+
+    int n_Roots = Solve_Square(a, b, c, &x1, &x2);//number of solutions
 
     switch (n_Roots)
+
     {
      case 0:
         printf("# No Solution \n");
@@ -25,7 +29,7 @@ int main()
      case 1:
         printf("# One Solution x = %lf \n", x1);
         break;
-(fabs(b) < eps)
+
      case 2:
         printf("# Two Solution \nx1 = %lf \nx2 = %lf \n", x1, x2);
         break;

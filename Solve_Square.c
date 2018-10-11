@@ -15,9 +15,10 @@
  *   @return all solutions
  *
  *
- *  @note Use it carefully!!!
  *
+ *  @date 19.09.2018
  *  @autors (C) YURiGOL, 2018
+ *  @vercion 1.2
  */
 
 #include "header.h"
