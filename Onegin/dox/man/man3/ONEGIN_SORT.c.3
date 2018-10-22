@@ -1,0 +1,150 @@
+.TH "ONEGIN_SORT.c" 3 "Wed Oct 10 2018" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ONEGIN_SORT.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsort0\fP (char **)"
+.br
+.ti -1c
+.RI "void \fBprint0\fP (char **, char **)"
+.br
+.ti -1c
+.RI "long \fBsize0\fP (void)"
+.br
+.ti -1c
+.RI "char * \fBget0\fP (long)"
+.br
+.ti -1c
+.RI "void \fBfree0\fP (char **, char **, char *)"
+.br
+.ti -1c
+.RI "char ** \fBput0\fP (char *, long)"
+.br
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char \fBget_file\fP [] = {'ONEGIN\&.txt' }"
+.br
+.ti -1c
+.RI "char \fBput_file\fP [] = {'ONEGIN2\&.txt'}"
+.br
+.ti -1c
+.RI "int \fBnumber_of_strings\fP = 1"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void free0 (char ** str2, char ** str3, char * buffer)"
+free arrays
+.PP
+free0
+.PP
+\fBParameters:\fP
+.RS 4
+\fI(char\fP **) str2 pointer array 
+.br
+\fI(char\fP **) str3 pointer array 
+.br
+\fI(char\fP **) buffer Whole original text 
+.RE
+.PP
+
+.SS "char * get0 (long lSize)"
+Reading TEXT from FILE [namefile0]
+.PP
+get0
+.PP
+\fBParameters:\fP
+.RS 4
+\fI(long\fP ) lSize Size of the text 
+.br
+\fI(char*)\fP buffer Whole original TEXT 
+.RE
+.PP
+
+.SS "int main ()"
+
+.SS "void print0 (char ** str2, char ** str3)"
+write text to file
+.PP
+print0
+.PP
+\fBParameters:\fP
+.RS 4
+\fI(char\fP **) str2 pointer array 
+.br
+\fI(char\fP **) str3 pointer array 
+.RE
+.PP
+
+.SS "char ** put0 (char * buffer, long lSize)"
+fills the array
+.PP
+put0
+.PP
+\fBParameters:\fP
+.RS 4
+\fI(char*\fP ) buffer Whole original TEXT 
+.br
+\fI(long\fP ) lSize Size of the text 
+.br
+\fI(char**)\fP str2 pointer array 
+.RE
+.PP
+
+.SS "long size0 (void)"
+finding text size
+.PP
+size0
+.PP
+\fBParameters:\fP
+.RS 4
+\fI(long)\fP Size of the text 
+.RE
+.PP
+
+.SS "void sort0 (char ** str2)"
+sorts array
+.PP
+sort0
+.PP
+\fBParameters:\fP
+.RS 4
+\fI(char**)\fP str2 pointer array 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "char get_file[] = {'ONEGIN\&.txt' }"
+
+.SS "int number_of_strings = 1"
+
+.SS "char put_file[] = {'ONEGIN2\&.txt'}"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.
