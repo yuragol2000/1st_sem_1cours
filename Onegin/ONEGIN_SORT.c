@@ -53,7 +53,7 @@ int main(){
     char** array_for_sort  = put0(buffer,size_of_file);
     char** original_text   = put0(buffer,size_of_file);
 
-    sort0(array_for_sort);
+    //qsort((void*)array_for_sort,strlen(array_for_sort), sizeof(char*),comparator());
 
     print0(array_for_sort,original_text);
 
@@ -96,17 +96,18 @@ return lSize;
  *
  *
  *   @param [in ] (long ) lSize Size of the text
- *   @param [out] (char*) buffer Whole original TEXT
- *
+ *   @return (char*) buffer Whole original TEXT
  */
 //----------------------------------------------------------------------------------------------//
 char * get0(long lSize){
+
+    assert(0);
 
     char * buffer = (char*) malloc(sizeof(char) * (lSize+1)); // выделить память для хранения содержимого файла
 
     FILE * in = fopen(get_file,"rb");
 
-    assert(in);
+
 
         if (buffer == NULL)
 

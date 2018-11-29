@@ -10,7 +10,7 @@
 int main()
 {
 
-    double a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
+    double a = NUN, b = 0, c = 0, x1 = 0, x2 = 0;
 
     printf("# Solve Square Equation (C) YURAGOL #\n # Enter a, b, c \n");
 
