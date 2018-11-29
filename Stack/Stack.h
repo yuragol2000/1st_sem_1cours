@@ -24,17 +24,28 @@
 
 typedef int val_type;
 
+struct Stack
+{
+    int size;// то что внутри
+    int capacity;// то место которое может быть доступным
+    val_type *data;
+    int hash_sum;
+    char print_format[3];
+    val_type *canary;
+    int *errors;
+
+};
 enum errors
     {
-    BAD_SIZE = (1001),
-    BAD_SIZE_CAPACITY = (1010),
-    BAD_CAPACITY = (1011),
-    BAD_PROTACTION = (1100),
-    BAD_CANARY_DEAD = (1101),
-    NO_PROBLEM = (1000)
-
-
+    BAD_SIZE = 1,
+    BAD_SIZE_CAPACITY = 2,
+    BAD_CAPACITY = 3,
+    BAD_PROTACTION = 4,
+    BAD_CANARY_DEAD = 5,
+    NO_PROBLEM = 0,
+    PROBLEMS = 6
 };
 
     FILE *Dump ;
+
 #endif // STACK_H_INCLUDED
