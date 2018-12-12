@@ -1,0 +1,59 @@
+digraph tree_a_graph_0
+{
+rankdir = TB;
+node [shape = Mrecord];
+nodesep = 1.5;
+0 [label = "green"]
+0 -> 1 [color = "red" penwidth = 2.0 label = "NO"];
+1 [label = "active"]
+1 -> 2 [color = "red" penwidth = 2.0 label = "NO"];
+2 [label = "huge"]
+2 -> 3 [color = "red" penwidth = 2.0 label = "NO"];
+3 [label = "small"]
+3 -> 4 [color = "red" penwidth = 2.0 label = "NO"];
+4 [label = "human"]
+4 -> 5 [color = "red" penwidth = 2.0 label = "NO"];
+5 [label = "cat"]
+4 -> 6 [color = "green" penwidth = 2.0 label = "YES"];
+6 [label = "Chubarov"]
+3 -> 7 [color = "green" penwidth = 2.0 label = "YES"];
+7 [label = "mouse"]
+2 -> 8 [color = "green" penwidth = 2.0 label = "YES"];
+8 [label = "gray"]
+8 -> 9 [color = "red" penwidth = 2.0 label = "NO"];
+9 [label = "whale"]
+8 -> 10 [color = "green" penwidth = 2.0 label = "YES"];
+10 [label = "elephant"]
+1 -> 11 [color = "green" penwidth = 2.0 label = "YES"];
+11 [label = "wild"]
+11 -> 12 [color = "red" penwidth = 2.0 label = "NO"];
+12 [label = "human"]
+12 -> 13 [color = "red" penwidth = 2.0 label = "NO"];
+13 [label = "dog"]
+12 -> 14 [color = "green" penwidth = 2.0 label = "YES"];
+14 [label = "young"]
+14 -> 15 [color = "red" penwidth = 2.0 label = "NO"];
+15 [label = "Ovchinkin"]
+14 -> 16 [color = "green" penwidth = 2.0 label = "YES"];
+16 [label = "Jhestkov"]
+11 -> 17 [color = "green" penwidth = 2.0 label = "YES"];
+17 [label = "orange"]
+17 -> 18 [color = "red" penwidth = 2.0 label = "NO"];
+18 [label = "wolf"]
+17 -> 19 [color = "green" penwidth = 2.0 label = "YES"];
+19 [label = "fox"]
+0 -> 20 [color = "green" penwidth = 2.0 label = "YES"];
+20 [label = "long"]
+20 -> 21 [color = "red" penwidth = 2.0 label = "NO"];
+21 [label = "big"]
+21 -> 22 [color = "red" penwidth = 2.0 label = "NO"];
+22 [label = "frog"]
+21 -> 23 [color = "green" penwidth = 2.0 label = "YES"];
+23 [label = "crocodile"]
+20 -> 24 [color = "green" penwidth = 2.0 label = "YES"];
+24 [label = "insect"]
+24 -> 25 [color = "red" penwidth = 2.0 label = "NO"];
+25 [label = "snake"]
+24 -> 26 [color = "green" penwidth = 2.0 label = "YES"];
+26 [label = "mantis"]
+}

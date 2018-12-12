@@ -1,0 +1,3 @@
+D:/CPPProject/c_akinator-master/cmake-build-debug/CMakeFiles/c_akinator_master.dir
+D:/CPPProject/c_akinator-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CPPProject/c_akinator-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
