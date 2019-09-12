@@ -19,6 +19,12 @@
         
         [out] x solution
         
+      Solutions:
+        {
+          ONE_SOLUTION,
+          INFINITY_ROOTS
+        }
+        
   
  
 #### 2.   Solve Square Equation.
