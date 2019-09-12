@@ -7,11 +7,11 @@
 
  A program that accepts and processes all solutions of the quadratic equation 
  
-  Using Functions:
+    Using Functions:
   
-    Solve_Square
+      Solve_Square
   
-    Linear_Equation
+      Linear_Equation
   
  
 #### 2.   Solve Square Equation.
