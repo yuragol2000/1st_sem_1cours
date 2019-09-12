@@ -1,12 +1,4 @@
-## 
 
-
-
-1. \n
-
-    ul - для вложенных списков нужно поставить 2 пробела
-   
-2. Onegin    
 > ## This is my first year programming course implementation.
 >
 > ### Tasks :
