@@ -3,7 +3,7 @@
 >
 > ### Tasks :
 > #### 1.   Solve Square Equation.
->         * A program that accepts and processes all solutions of the quadratic equation 
+>    A program that accepts and processes all solutions of the quadratic equation 
 >       1. 
 >
 > #### 2.   Onegin.
