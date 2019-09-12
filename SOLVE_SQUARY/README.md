@@ -16,9 +16,9 @@
       [in ] 1-st coefficient
       [in ] 2-nd coefficient      
       
-      [in ] solution
+      [out] reference to the result
         
-      [out]:
+      return:
         {
           ONE_SOLUTION,
           INFINITY_ROOTS
