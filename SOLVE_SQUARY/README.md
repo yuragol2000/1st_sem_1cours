@@ -11,14 +11,14 @@
   
     Solve_Square 
       
-    int Linear_Equation(const double b, const double& c, double& x)
+    int Linear_Equation(const double, const double&, double&)
       
-      [in ] b 1-st coefficient
-      [in ] c 2-nd coefficient      
+      [in ] 1-st coefficient
+      [in ] 2-nd coefficient      
       
-      [out] x solution
+      [in ] solution
         
-      Solutions:
+      [out]:
         {
           ONE_SOLUTION,
           INFINITY_ROOTS
