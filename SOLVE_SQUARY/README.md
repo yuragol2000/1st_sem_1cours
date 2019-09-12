@@ -7,17 +7,16 @@
 
  A program that accepts and processes all solutions of the quadratic equation 
  
-    Using Functions:
+  Using Functions:
   
-      Solve_Square
-        
-  
-      Linear_Equation
+    Solve_Square 
       
-        [in] b 1-st coefficient
-        [in] c 2-nd coefficient
-        
-        [out] x solution
+    int Linear_Equation(const double b, const double& c, double& x)
+      
+      [in ] b 1-st coefficient
+      [in ] c 2-nd coefficient      
+      
+      [out] x solution
         
       Solutions:
         {
