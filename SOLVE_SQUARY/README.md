@@ -3,12 +3,8 @@
 >
 > ### Tasks :
 > #### 1.   Solve Square Equation.
->         A program that accepts and processes all solutions of the quadratic equation 
+>         * A program that accepts and processes all solutions of the quadratic equation 
+>       1. 
 >
-> ####2.   Onegin.
->
-> > Вложенная цитата.
->
-> Here's some example code:
->
->     return shell_exec("echo $input | $markdown_script");
+> #### 2.   Onegin.
+>   
