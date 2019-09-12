@@ -10,8 +10,15 @@
     Using Functions:
   
       Solve_Square
+        
   
       Linear_Equation
+      
+        [in] b 1-st coefficient
+        [in] c 2-nd coefficient
+        
+        [out] x solution
+        
   
  
 #### 2.   Solve Square Equation.
