@@ -1,3 +1,2 @@
-# 1st_sem_1cours
-  This is my first year programming course
+# This is my first year programming course implementation
 ## h2
