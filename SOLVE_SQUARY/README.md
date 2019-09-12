@@ -6,7 +6,7 @@
 >         + A program that accepts and processes all solutions of the quadratic equation 
 >         
 >           + @breaf Solving Square Equation
-        Using Functions:
+>        Using Functions:
 >             @function Solve_Square
 >             @function Linear_Equation
 >
