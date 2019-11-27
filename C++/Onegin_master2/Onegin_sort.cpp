@@ -11,12 +11,11 @@
 //----------------------------------FUNCTIONS---------------------------------//
 //----------------------------------------------------------------------------//
 ////////////////////////////////////////////////////////////////////////////////
-void make_array_of_pointers_onegin_sort(
-  std::vector<char*> &text_for_sort,
-  std::vector<char*> &text_for_sort2,
-  std::vector<char*> &original_text,
-  long &Size_of_file,
-  char* &Buffer){
+void make_array_of_pointers_onegin_sort(  std::vector<char*> &text_for_sort,
+                                          std::vector<char*> &text_for_sort2,
+                                          std::vector<char*> &original_text,
+                                          long &Size_of_file,
+                                          char* &Buffer){
     
     text_for_sort = make_array_of_pointers(Buffer,Size_of_file);
     text_for_sort2 = make_array_of_pointers(Buffer,Size_of_file);
