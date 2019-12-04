@@ -22,12 +22,10 @@ int main(){
                      text_for_sort2 = {},
                      original_text  = {};
 
-  make_array_of_pointers_onegin_sort(text_for_sort,
-                                    text_for_sort2,
-                                    original_text,
-                                    Size_of_file,
-                                          Buffer);
-
+  text_for_sort = make_array_of_pointers(Buffer,Size_of_file);
+  text_for_sort2= text_for_sort;
+  original_text = text_for_sort;
+  
   print_to_file(text_for_sort,output_file);
   print_to_file(text_for_sort2,output_file1);
 
