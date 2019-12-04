@@ -11,20 +11,7 @@
 //----------------------------------FUNCTIONS---------------------------------//
 //----------------------------------------------------------------------------//
 ////////////////////////////////////////////////////////////////////////////////
-void make_array_of_pointers_onegin_sort(  std::vector<char*> &text_for_sort,
-                                          std::vector<char*> &text_for_sort2,
-                                          std::vector<char*> &original_text,
-                                          long &Size_of_file,
-                                          char* &Buffer){
-    
-    text_for_sort = make_array_of_pointers(Buffer,Size_of_file);
-    text_for_sort2 = make_array_of_pointers(Buffer,Size_of_file);
-    original_text = make_array_of_pointers(Buffer,Size_of_file);
 
-    std::sort(text_for_sort.begin(),text_for_sort.end(),from_start_comp);
-    std::sort(text_for_sort2.begin(),text_for_sort2.end(),from_finish_comp);
-
-}
 long size_of_file(const std::string& get_file){
 
     std::ifstream Input_file;
