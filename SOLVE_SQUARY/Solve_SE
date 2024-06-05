@@ -1,0 +1,49 @@
+import numpy as np
+
+def Linear_Equation(b, c):
+
+    if(abs(b) < 0):        
+        if abs(c) < 0:
+            return 0, _, _ #INFINITY_ROOTS
+    else:
+        return 1, -c / b , _
+
+def Solve_Square(a, b, c): 
+
+    if (a == 0):
+        return Linear_Equation(b, c)
+
+    D = b * b - 4 * a * c 
+
+    if (D == 0):
+        return 1, -b / (2 * a) , _
+    elif (D > 0):
+        D_Sqrt = np.sqrt(D)
+        x1 = ( (-b + D_Sqrt) / (2 * a) )
+        x2 = ( (-b - D_Sqrt) / (2 * a) )
+        return 2, x1, x2
+    elif (D < 0): 
+        D_Sqrt = np.sqrt(-D)
+        x1 = (D_Sqrt / (2 * a))
+        x2 = (-b / (2 * a))
+        return 4, x1, x2
+
+def Solve_SE(a,b,c):
+    n_Roots, x1, x2 = Solve_Square(a, b, c) #number of solutions
+    
+    if x1 > x2:
+        t = x2
+        x2 = x1
+        x1 = t
+    
+    match(n_Roots):
+        case 0:
+            print(f"# No Solution")
+        case 1:
+            print(f"# One Solution {x1}")
+        case 2:
+            print(f"# Two Solution x1 = {x1:.2f} x2 = {x2:.2f}")
+        case 3:
+            print(f"# An Infinity Number of solution\n ")
+        case 4:
+            print(f"# Two Complex Roots \n x1 = {x1:.2f}, x1 = {x2:.2f}")
